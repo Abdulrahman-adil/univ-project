@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+    <!--FranWork Style-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Main Style-->>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Main Style-->
+    <!--Animation-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"/>
+  </head>
+  <body>
+    <!--  -->
+    <div class="header">
+      <div class="container">
+        <div class="enter">
+          <div class="enter">
+            <a class="in" href="#"></a>
+              .. الطالب / حسن سعد مصطفي
+              <i class="fa fa-user"></i>
+            </a>
+            <i class="fa-solid fa-bell"></i>
+          </div>
+        </div>
+        <div class="title-right">
+          <h3>
+            كلية التجـارة - جامعة عين شمس
+            <br />منصة التعليم الإلكتروني المدمج
+          </h3>
+          <img src="/imgs/faculty_of_business_logo.png" alt="" />
+          <img src="/imgs/ain-shams_university_logo.png" alt="" />
+        </div>
+
+      </div>
+    </div>
+<!-- Start Result-->
+<div class="result">
+  <div class="container">
+    <h2>نتيجة العام الدراسي 2022 - 2021</h2>
+    <p>برنامج الحاسب الألي ونظم المعلومات <br>الفرقه الرابعة / الفصل الدراسي الأول</p>
+    <div class="num">
+      <h3>أدخل رقم الجلوس</h3>
+      <input type="number" id="sitting-number">
+      <button id="result">النتيجة</button>
+    </div>
+    <div id="result" class="showResult" style="display: none;">
+      <img src="/imgs/result.png">
+      <p>مواد التخلف <small>لا يوجد</small></p>
+    </div>
+    <p class="resultError" style="color: red;font-size: 12px;position: absolute;margin-left: 43%; "></p> 
+  </div>
+</div>
+<!-- End Result-->
+    <footer>
+      <div class="container">
+        <p>جامعة عين شمس&copy; جميع الحقوق محفوظه</p>
+
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+      </div>
+     
+    </footer>
+    <script src="js/script.js"></script>
+    <!-- <script src="js/result.js.js"></script> -->
+  </body>
+</html>

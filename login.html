@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!--FranWork Style-->
+    <link rel="stylesheet" href="css/myFramWork.scss" />
+    <link rel="stylesheet" href="css/myFramWork.css" />
+    <!--FranWork Style-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!--Main Style-->
+    <link rel="stylesheet" href="css/style.scss" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!--Main Style-->
+    <!--Animation-->
+    <link rel="stylesheet" href="css/animation.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="enter">
+          <!-- <a class="in" href="#"
+          >الدخول
+          <i class="fa fa-user"></i>
+        </a> -->
+        </div>
+        <div class="title-right">
+          <h3>
+            كلية التجـارة - جامعة عين شمس
+            <br />منصة التعليم الإلكتروني المدمج
+          </h3>
+          <img src="/imgs/faculty_of_business_logo.png" alt="" />
+          <img src="/imgs/ain-shams_university_logo.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Start Login-->
+    <div id="login" class="main">
+      <div class="container">
+        <h2>الدخول لحسابك</h2>
+        <div class="select">
+          <label for="groups">الفرقة الدراسية</label>
+          <select class="selec" name="groups" id="group">
+            <option value="group-one">الفرقة الأولى</option>
+            <option value="group-two">الفرقة الثانية</option>
+            <option value="group-three">الفرقة الثالثة</option>
+            <option value="group-four">الفرقة الرابعة</option>
+          </select>
+          <p class="study-group-error"style="color: red;font-size: 12px;margin-top: 5px; margin-bottom: 5px;"></p>
+          <label for="groups"> الفصل الدراسي</label>
+          <select class="selec" name="classes" id="class">
+            <option value="semester-one">الفصل الدراسي الأول</option>
+            <option value="semester-two">الفصل الدراسي الثاني</option>
+          </select>
+          <p class="semester-error"style="color: red;font-size: 12px;margin-top: 5px; margin-bottom: 5px;"></p>
+          <label for="groups">البرنامج</label>
+          <select class="selec" name="programmes" id="program">
+            <option value=" program-one">عام</option>
+            <option value="program-two">برنامج النظم المحاسبية</option>
+            <option value="program-three">برنامج التنظيم والإدارة</option>
+            <option value="program-four">برنامج تنظيم وإدارة المستشفيات</option>
+            <option value="program-five">برنامج إدارة الفنادق والقرى السياحية</option>
+            <option value="program-six">برنامج الحاسب الألي وتكنولوجيا المعلومات</option>
+          </select>
+          <p class="program-error"style="color: red;font-size: 12px;margin-top: 5px; margin-bottom: 5px;"></p>
+        </div>
+        <form>
+          <div class="grp">
+            <input type="email"  name="email" id="email"placeholder="اسم المستخدم (الإيميل الأكاديمي)" required/>
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+            <p class="email-error"style="color: red;font-size: 12px;margin-top: 10px;margin-bottom: 10px;"></p>
+          </div>
+          <div class="grp">
+            <input type="password" id="password"placeholder="كلمة المرور" required/>
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+            <p class="password-error"style="color: red;font-size: 12px;margin-top: 10px;margin-bottom: 10px;"></p>
+          </div>
+          <div class="enter-log">
+            <div class="remember">
+              <input type="checkbox" />
+              <label for="vehicle1"> تذكر أسم المستخدم</label>
+            </div>
+            <a href="#">هل نسيت كلمة المرور؟</a>
+          </div>
+          <button class="account" type="submit">تسجيل الدخول</button>
+          <div id="error"></div>
+        </form>
+      </div>
+    </div>
+  
+    <footer>
+      <div class="container">
+        <p>جامعة عين شمس&copy; جميع الحقوق محفوظه</p>
+
+        <div class="social">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-telegram"></i>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+   <!-- end Login-->
+  </body>
+</html>
