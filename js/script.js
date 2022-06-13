@@ -1,6 +1,4 @@
-// import "login.html";
-// import "result.html";
-// for login
+//  login
 let student = {
     myEmail : 'Hassan.Saad1316@std.bus.asu.edu.eg',
     myPassword : '012345678910',
