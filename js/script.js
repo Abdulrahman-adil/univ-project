@@ -78,19 +78,3 @@ submitBtn.addEventListener('submit', function (e) {
         ? programError.textContent = '* عفوا . أنت غير مسجل بهذا البرنامج'
         : programError.textContent = '';
 });
-
-let sittingNumber = document.querySelector('#sitting-number'),
-    resultBtn     = document.querySelector('#result'),
-    showResult    = document.querySelector('.showResult'),
-    resultError   = document.querySelector('.resultError');
-
-let mySittingNumber = '83026'
-
-resultBtn.addEventListener('click', function () {
-    if (sittingNumber.value == mySittingNumber) {
-        showResult.style.display = 'block'
-        resultError.textContent = ''
-    } else {
-        resultError.textContent = 'رقم الجلوس غير صحيح . رجاء تأكد من رقم جلوسك'
-    }
-});

@@ -581,19 +581,18 @@
 }
 /*end Classroom*/
 
-/*Start exam-table*/
-.page-test {
+/*Start school-table*/
+.school-table {
   padding-top: 62px;
   padding-bottom: 62px;
-  background-color: #dae1e4;
+  background-color: #f5f8f7;
   height: 100vh;
 }
-
-.page-test .container h2 {
+.school-table .container h2 {
   text-align: center;
   color: #0769b2;
 }
-.page-test .container img {
+.school-table .container img {
   width: 43%;
   display: block;
   margin: 90px auto;
@@ -601,13 +600,11 @@
   border-radius: 5px;
   padding: 0px;
 }
-
-.page-test .container img:hover {
+.school-table .container img:hover {
   -webkit-box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
   box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
-
-/*End exam-table*/
+/*End school-table*/
 
 /*Start Books*/
 .books {
@@ -862,7 +859,7 @@ Start payments
   /*Method One*/
   .payments-one{
     text-align: center;
-    padding-top: 200px;
+    padding-top: 300px;
     background-color: #f5f8f7;
     height: 100vh; 
     }
@@ -893,7 +890,7 @@ Start payments
       }
       .payments-one .container .pay-visa{
         display: grid;
-        width: 300px;
+        width: 335px;
         padding: 20px;
         margin: 5px auto;
         grid-template-columns: repeat(6, 1fr);
@@ -907,14 +904,13 @@ Start payments
         -moz-box-shadow: 8px 12px 10px -8px rgb(169 166 166 / 81%);
         position: relative;
         margin-top: 32px;
+        cursor: pointer;
       }
       .payments-one .container .pay-visa > .one{
         grid-column: 1 / 7;
       }
       .payments-one .container .pay-visa > .tow{
         grid-column: span 3;
-        flex-direction: row-reverse;
-
       }
       .payments-one .container .pay-visa > .three{
         grid-column: span 3;
@@ -922,7 +918,7 @@ Start payments
       .payments-one .container .pay-visa > .four{
         grid-column: 1 / 7;
         background-color: #0769b2;
-        padding: 8px;
+        padding: 10px;
         border-radius: 10px;
         color: #fff;
       }
@@ -959,14 +955,18 @@ Start payments
         margin-top: 33px;
       }
       .payments-one .container .pay-visa .fa-lock{
-        bottom: 44%;
-        right: 15%;
+        bottom: 46%;
+        right: 12%;
+      }
+      .payments-one .container .pay-visa .fa-calendar {
+        top: 48%;
+    left: 40%;
       }
  /*Method One*/
  /*Method Tow*/
  .payments-tow{
   text-align: center;
-  padding-top: 200px;
+  padding-top: 300px;
   background-color: #f5f8f7;
   height: 100vh; 
   }
@@ -974,7 +974,8 @@ Start payments
     position: relative;
   }
   .payments-tow .container h3{
-  color: #0769b2;
+    color: #0769b2;
+    font-size: 25px;
   }
   .payments-tow .container .paragraph{
     color: #0769b2;
@@ -988,12 +989,12 @@ Start payments
       gap: 15px;
     }
     .payments-tow .container .visa{
-    width: 100px;
+    width: 130px;
     }
     .payments-tow .container .img-visa p {
       font-weight: bold;
-      font-size: 13px;
-      margin-top: 5px;
+      font-size: 19px;
+      margin-top: 6px;
     }  
     .payments-tow .container .pay-fawry p:first-of-type{
       background-color: #fff;
@@ -1004,14 +1005,16 @@ Start payments
       border-radius: 10px;
       color: #0769b2;
       font-weight: bold;
+      font-size: 20px;
   }
   .payments-tow .container .pay-fawry p > small {
     margin-left: 11px;
     font-weight: bold;
     color: black;
+    font-size: 20px;
 }
 .payments-tow .container .pay-fawry p:last-of-type {
-  font-size: 9px;
+  font-size: 12px;
     color: #ccc;
 }
   

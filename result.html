@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&display=swap"rel="stylesheet"/>
   </head>
+ 
   <body>
     <!--  -->
     <div class="header">
@@ -34,7 +35,6 @@
           <img src="/imgs/faculty_of_business_logo.png" alt="" />
           <img src="/imgs/ain-shams_university_logo.png" alt="" />
         </div>
-
       </div>
     </div>
 <!-- Start Result-->
@@ -68,7 +68,22 @@
       </div>
      
     </footer>
-    <script src="js/script.js"></script>
-    <!-- <script src="js/result.js.js"></script> -->
+    <script>
+      let sittingNumber = document.querySelector('#sitting-number'),
+      resultBtn     = document.querySelector('#result'),
+      showResult    = document.querySelector('.showResult'),
+      resultError   = document.querySelector('.resultError');
+  
+  let mySittingNumber = '83026'
+  
+  resultBtn.addEventListener('click', function () {
+      if (sittingNumber.value == mySittingNumber) {
+          showResult.style.display = 'block'
+          resultError.textContent = ''
+      } else {
+          resultError.textContent = 'رقم الجلوس غير صحيح . رجاء تأكد من رقم جلوسك'
+      }
+  });
+    </script>
   </body>
 </html>
