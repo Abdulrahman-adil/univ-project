@@ -483,7 +483,6 @@
   background-color: #eee;
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr) [10]; */
   grid-template-columns: repeat(10, 1fr);
   -ms-grid-rows: 50px auto 50px;
   grid-template-rows: 50px auto 50px;
@@ -537,9 +536,6 @@
 .room .sidebar #rightside-nav ul li.active > a {
   color: #0394ff;
 }
-.room .sidebar #rightside-nav ul li.active ul {
-  display: block;
-}
 .room .sidebar #rightside-nav ul li a {
   color: #ffffff;
   display: block;
@@ -562,9 +558,6 @@
 .room .sidebar #rightside-nav ul li a:hover {
   color: #78d44e;
 }
-.room .sidebar #rightside-nav ul ul {
-  display: none;
-}
 .room .sidebar #rightside-nav ul ul li {
   background-color: #0769b2;
   margin-bottom: 0;
@@ -578,6 +571,27 @@
   padding-bottom: 13px;
   color: #ffff;
   font-weight: bold;
+}
+.sub-menu {
+  height: 53px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .4s;
+}
+.show-itmes {
+  height: 226px;
+}
+.sub-menu span {
+  font-weight: bold;
+}
+.arrow {
+  transition: .4s;
+}
+.arrow-up {
+  transform: rotate(180deg);
+}
+.room .sidebar #rightside-nav ul ul {
+  display: block;
 }
 /*end Classroom*/
 
